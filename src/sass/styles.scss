@@ -1,0 +1,14 @@
+// Import Variables
+@import "variables";
+// Import Utilities
+@import "utilities";
+// Import Project Base
+@import "base";
+
+// Import Components
+@import "components/navbar";
+@import "components/footer";
+@import "components/button";
+
+// Import Sections
+@import "sections/hero";
