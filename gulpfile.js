@@ -78,6 +78,7 @@ var optimizejs = require("gulp-optimize-js");
 
 // Styles
 var sass = require("gulp-sass")(require("node-sass"));
+var purgecss = require("gulp-purgecss");
 var postcss = require("gulp-postcss");
 var prefix = require("autoprefixer");
 var minify = require("cssnano");
@@ -179,6 +180,11 @@ var buildStyles = function (done) {
       sass({
         outputStyle: "expanded",
         sourceComments: true,
+      })
+    )
+    .pipe(
+      purgecss({
+        content: ["src/**/*.html"],
       })
     )
     .pipe(
