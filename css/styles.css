@@ -1,4 +1,4 @@
-/*! project-name v0.0.1 | (c) 2021 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! MurshalAkhtar v0.0.1 | (c) 2021 Murshal Akhtar Ansari | MIT License | http://link-to-your-git-repo.com */
 /* line 1, src/sass/_utilities.scss */
 .d-flex {
   display: -webkit-box;
@@ -7,57 +7,20 @@
 }
 
 /* line 5, src/sass/_utilities.scss */
-.x-c {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 
 /* line 9, src/sass/_utilities.scss */
-.x-r {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
 
 /* line 13, src/sass/_utilities.scss */
-.x-l {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
 
 /* line 17, src/sass/_utilities.scss */
-.y-c {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
 /* line 21, src/sass/_utilities.scss */
-.y-r {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
 
 /* line 25, src/sass/_utilities.scss */
-.y-l {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
 
 /* line 29, src/sass/_utilities.scss */
-.center {
-  display: grid;
-  place-items: center;
-}
 
 /* line 35, src/sass/_utilities.scss */
-.m-auto {
-  margin: auto;
-}
 
 /* line 39, src/sass/_utilities.scss */
 .mx-auto {
@@ -66,66 +29,33 @@
 }
 
 /* line 44, src/sass/_utilities.scss */
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
 
 /* line 49, src/sass/_utilities.scss */
-.ml-auto {
-  margin-left: auto;
-}
 
 /* line 53, src/sass/_utilities.scss */
-.mr-auto {
-  margin-right: auto;
-}
 
 /* line 57, src/sass/_utilities.scss */
-.mt-auto {
-  margin-top: auto;
-}
 
 /* line 61, src/sass/_utilities.scss */
-.mb-auto {
-  margin-bottom: auto;
-}
 
 /* line 66, src/sass/_utilities.scss */
-.p-auto {
-  padding: auto;
-}
 
 /* line 70, src/sass/_utilities.scss */
-.px-auto {
-  padding-left: auto;
-  padding-right: auto;
-}
 
 /* line 75, src/sass/_utilities.scss */
-.py-auto {
-  padding-top: auto;
-  padding-bottom: auto;
-}
 
 /* line 80, src/sass/_utilities.scss */
-.pl-auto {
-  padding-left: auto;
-}
 
 /* line 84, src/sass/_utilities.scss */
-.pr-auto {
-  padding-right: auto;
-}
 
 /* line 88, src/sass/_utilities.scss */
-.pt-auto {
-  padding-top: auto;
-}
 
 /* line 92, src/sass/_utilities.scss */
-.pb-auto {
-  padding-bottom: auto;
+
+/* line 95, src/sass/_utilities.scss */
+.img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 /* Box sizing rules */
@@ -139,8 +69,7 @@
 
 /* Remove default padding */
 /* line 9, src/sass/_base.scss */
-ul[class],
-ol[class] {
+ul[class] {
   padding: 0;
 }
 
@@ -149,17 +78,9 @@ ol[class] {
 body,
 h1,
 h2,
-h3,
-h4,
 p,
 ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
+li {
   margin: 0;
 }
 
@@ -174,8 +95,7 @@ body {
 
 /* Remove list styles on ul, ol elements with a class attribute */
 /* line 41, src/sass/_base.scss */
-ul[class],
-ol[class] {
+ul[class] {
   list-style: none;
 }
 
@@ -204,10 +124,6 @@ a:not([class]):after {
 
 /* Make images easier to work with */
 /* line 66, src/sass/_base.scss */
-img {
-  max-width: 100%;
-  display: block;
-}
 
 /* Natural flow and rhythm in articles by default */
 /* line 72, src/sass/_base.scss */
@@ -217,10 +133,8 @@ article > * + * {
 
 /* Inherit fonts for inputs and buttons */
 /* line 77, src/sass/_base.scss */
-input,
-button,
-textarea,
-select {
+
+button {
   font: inherit;
 }
 
@@ -238,7 +152,17 @@ select {
   }
 }
 
-/* line 3, src/sass/components/_navbar.scss */
+/* line 1, src/sass/components/_navbar.scss */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 5, src/sass/components/_navbar.scss */
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
